@@ -11,40 +11,34 @@
 
 <body>
     <header>
-        <nav></nav>
+        <h1>Api cat: Search your favorite kitty.</h1>
     </header>
     <main>        
         <h1>Beautifull Kitties</h1>
-        <section>
+        <span id="error"></span>
+        <section class="section__ramdon">
             <div class="container">
                 <div class="container__michi">
                     <img id="michiRamdon" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Favorite</button>
+                    <button class="btn-primary" id="btn">Add Favorite</button>
+                    
                 </div>
                 <div class="container__michi">
                     <img id="michiRamdon1" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Favorite</button>
+                    <button class="btn-primary"  id="btn1"> Add Favorite</button>
                 </div>
                 <div class="container__michi">
                     <img id="michiRamdon2" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Favorite</button>
+                    <button class="btn-primary" id="btn2">Add Favorite</button>
                 </div>
-            </div>            
-            <h2>My favorites</h2>
-            <article class="favorites__michis">
-                <div class="favorites__card">
-                    <img id="michiFav" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Forget</button>
-                </div>
-                <div class="favorites__card">
-                    <img id="michiFav1" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Forget</button>
-                </div>
-                <div class="favorites__card">
-                    <img id="michiFav2" class="img-michi" alt="Foto de michi">
-                    <button class="btn btn-primary">Forget</button>
-                </div>
-            </article>
+            </div>               
+            <button class="btn-primary search-btn" onclick="reload()">Serch more kitties</button>         
+        </section>
+        <section>
+            <h1>Favorites</h1>            
+            <div class="container" id="container__favorites">
+            </div>
+
         </section>
     </main>
     <script src="main.js"></script>

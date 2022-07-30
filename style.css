@@ -1,31 +1,147 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: model-box;
 }
-header{
+
+body {
+    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
+}
+
+header {
     width: 100%;
     height: 70px;
-    background-color: aquamarine;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
 }
+
 h1 {
     text-align: center;
     font-size: 42px;
-}
-h2{
-    text-align: center;
+    margin: 10px 0;
 }
 
-.container, .favorites__michis{
+
+.container {
     display: flex;
-    margin: 12px 80px;
-    align-items: center;
-    justify-content: space-between;
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-.img-michi{
-    width: 500px;
-    height: 500px;
+.container__michi {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 8px;
+
+}
+
+.img-michi {
+    width: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.btn-primary {
+    width: 50%;
+    height: 30px;
+    align-self: center;
+    background-color:slateblue;
+    border: 0px;
+    border-radius: 8px;
+    margin: 8px 4px;
+    color: azure;
+}
+.btn-primary:hover {
+    cursor: pointer;    
+    background-color:mediumseagreen;
+    border: 1px solid;
+    
+}
+.section__ramdon {
+    display: flex;
+    flex-direction: column;
+
+}
+#notification{
+    display: block;
+    background-color: darkgreen;
+    color: cornsilk;
+}
+.search-btn{   
+    background-color:darkcyan;    
+    margin: 0 auto;
+}
+
+.container__michi div {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 8px;
+    border: 2px solid;
+
+}
+
+#container__favorites {
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container__favorites div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px 16px 8px;
+
+}
+
+#container__favorites div img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;    
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+}
+#container__favorites div button{
+    width: 40%;
+    border-radius: 8px;
+    padding: 4px;
+    border: none;
+    background-color:coral;
+}
+#container__favorites div button:hover{
+    width: 50%;
+    cursor: pointer; 
+    padding: 3px;   
+    background-color:crimson;
+    border: 1px solid;
+    
+}
+
+
+
+@media (max-width: 980px) {
+    .img-michi {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
