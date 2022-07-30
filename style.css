@@ -1,28 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: model-box;
+    box-sizing: border-box;
 }
 
-body {
-    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgba(255, 251, 125, 1) 90.7%);
-}
+
 
 header {
     width: 100%;
     height: 70px;
-    background-color: #F4D03F;
-    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-    color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+nav h1{
+    color: coral;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center;
     font-size: 42px;
     margin: 10px 0;
+    color: chocolate;
 }
 
 
@@ -33,6 +31,8 @@ h1 {
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
 }
 
 .container__michi {
@@ -131,9 +131,16 @@ h1 {
 
 
 @media (max-width: 980px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .img-michi {
         max-width: 300px;
         max-height: 200px;
+    }
+    header h1{
+        font-size: 24px;
     }
 
 }
@@ -143,5 +150,11 @@ h1 {
         display: flex;
         flex-wrap: wrap;
     }
+  
+    .img-michi {
+        width: 300px;
+        height: 200px;
+    }
+    
 
 }
